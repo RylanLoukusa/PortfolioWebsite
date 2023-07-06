@@ -1,58 +1,13 @@
-import { useEffect, useRef } from 'react'
-import { motion } from "framer-motion";
-import gsap from 'gsap-trial'
-import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
 import LogoR from '../../../assets/images/logo-r.png'
 import './index.scss'
 
 const Logo = () => {
 
-    const bgRef = useRef();
-    const outlineLogoRef = useRef();
-    const solidLogoRef = useRef();
-
-    const pathVariants = {
-        hidden: {
-          pathLength: 0
-        },
-        visible: {
-          pathLength: 1,
-          transition: {
-            duration: 10,
-          }
-        }
-      }
-
-    useEffect(() => {
-        gsap.registerPlugin(DrawSVGPlugin)
-    
-        gsap
-          .timeline()
-          .to(bgRef.current, {
-            duration: 1,
-            opacity: 1,
-          })
-          .from(outlineLogoRef.current, {
-            drawSVG: 0,
-            duration: 20,
-          })
-    
-        gsap.fromTo(
-          solidLogoRef.current,
-          {
-            opacity: 0,
-          },
-          {
-            opacity: 1,
-            delay: 4,
-            duration: 4,
-          }
-        )
-      }, [])
-
     return (
-        <div className="logo-container" ref={bgRef}>
-            <img ref={solidLogoRef} className="solid-logo" src={LogoR} alt="R" />
+        <div className="logo-container" >
+          <div className="solid-logo-div">
+            <img className="solid-logo" src={LogoR} alt="R" />
+          </div>
             <svg
                 width="700pt"
                 height="980pt"
@@ -61,11 +16,12 @@ const Logo = () => {
                 xmlns="http://www.w3.org/2000/svg"
             >
                 <g
+                id="clips"
                 className="svg-container"
                 transform="translate(0 457) scale(.1 -.1)"
                 fill="none"
                 >
-                    <motion.path
+                    <path
                         d="M 82.29,1054.92
                         C 82.29,1054.92 82.23,85.40 82.23,85.40
                           82.23,85.40 354.00,83.33 354.00,83.33
@@ -127,10 +83,7 @@ const Logo = () => {
                           253.23,249.33 214.83,249.00 214.83,249.00
                           214.83,249.00 216.33,495.00 216.33,495.00 Z
                         M 4.00,1054.75
-                        C 4.00,1054.75 10.50,1055.00 10.50,1055.00"
-                        variants={pathVariants}
-                        initial="hidden"
-                        animate="visible"
+                        C 4.00,1054.75 10.50,1055.00 10.50,1055.0"
                     />
                 </g>
             </svg>

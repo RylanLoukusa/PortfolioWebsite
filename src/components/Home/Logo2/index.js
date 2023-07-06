@@ -1,58 +1,11 @@
-import { useEffect, useRef } from 'react'
-import { motion } from "framer-motion";
-import gsap from 'gsap-trial'
-import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
 import LogoL from '../../../assets/images/logo-l.png'
 import './index.scss'
 
 const Logo = () => {
 
-    const bgRef = useRef();
-    const outlineLogoRef = useRef();
-    const solidLogoRef = useRef();
-
-    const pathVariants = {
-        hidden: {
-          pathLength: 0
-        },
-        visible: {
-          pathLength: 1,
-          transition: {
-            duration: 10,
-          }
-        }
-      }
-
-    useEffect(() => {
-        gsap.registerPlugin(DrawSVGPlugin)
-    
-        gsap
-          .timeline()
-          .to(bgRef.current, {
-            duration: 1,
-            opacity: 1,
-          })
-          .from(outlineLogoRef.current, {
-            drawSVG: 0,
-            duration: 20,
-          })
-    
-        gsap.fromTo(
-          solidLogoRef.current,
-          {
-            opacity: 0,
-          },
-          {
-            opacity: 1,
-            delay: 4,
-            duration: 4,
-          }
-        )
-      }, [])
-
     return (
-        <div className="logo-container-l" ref={bgRef}>
-            <img ref={solidLogoRef} className="solid-logo-l" src={LogoL} alt="R" />
+        <div className="logo-container-l">
+            <img className="solid-logo-l" src={LogoL} alt="R" />
             <svg
                 width="700pt"
                 height="980pt"
@@ -65,7 +18,7 @@ const Logo = () => {
                 transform="translate(0 457) scale(.1 -.1)"
                 fill="none"
                 >
-                    <motion.path
+                    <path
                         d="M 95.66,1045.74
                         C 95.66,1045.74 95.66,75.56 95.66,75.56
                           95.66,75.56 243.91,75.56 243.91,75.56
@@ -81,9 +34,6 @@ const Logo = () => {
                           96.65,1046.07 29.06,1046.09 29.06,1046.09 Z
                         M 21.00,1046.09
                         C 21.00,1046.09 31.33,1046.09 31.33,1046.09"
-                        variants={pathVariants}
-                        initial="hidden"
-                        animate="visible"
                     />
                 </g>
             </svg>

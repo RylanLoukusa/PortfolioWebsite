@@ -77,7 +77,6 @@ const Contact = () => {
                 <br />
                 Monticello, Minnesota <br />
                 <span> rylanloukusa@gmail.com</span>
-
             </div>
             <div className="wrap-map">
             <MapContainer center={[45.3055, -93.7941]} zoom={10} scrollWheelZoom={false}>
