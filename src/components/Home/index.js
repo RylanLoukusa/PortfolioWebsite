@@ -44,15 +44,6 @@ const Home = () => {
             </div>
             <Logo />
             <Logo2 />
-            <div className="credits"> 
-                <a 
-                 href="https://www.youtube.com/watch?v=bmpI252DmiI" 
-                 target="_blank" 
-                 rel="noreferrer">
-                    Credits to Slobodan
-                 </a>
-                
-                </div>
             </div>
     )
 }
