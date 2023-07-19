@@ -1,6 +1,6 @@
 .nav-bar{
     background: #181818;
-    width: 85px;
+    width: 75px;
     height: 100%;
     position: absolute;
     top: 0;
@@ -8,9 +8,9 @@
     min-height: 500px;
 
     .subTitle {
-        font-size: 12px;
+        font-size: 13px;
         font-weight: 600;
-        padding-left: 6px;
+        padding-left: 13px;
         color: white;
     }
   
@@ -133,13 +133,71 @@
             position: absolute;
             bottom: -45%;
             left: 31%;
-            color: white;
+            color: #4d4d4e;
             font-size: 11px;
             font-weight: 400;
-            a:visited { text-decoration: none; color:white; }
-            a:hover { text-decoration: none; color:white; }
-            a:focus { text-decoration: none; color:white; }
-            a:hover, a:active { text-decoration: none; color:white }
+            a:visited { text-decoration: none; color: #4d4d4e; }
+            a:hover { text-decoration: none; color: #4d4d4e; }
+            a:focus { text-decoration: none; color: #4d4d4e; }
+            a:hover, a:active { text-decoration: none; color: #4d4d4e; }
+        }
+    }
+}
+
+.hamburger-icon {
+    opacity: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .nav-bar {
+        background: #181818;
+        position: absolute;
+        width: 100%;
+        height: auto;
+        min-height: auto;
+
+        .logo{
+           width: 70px;
+        }
+
+        ul, nav {
+            display: none;
+        }
+
+        nav {
+            width: 100%;
+            top: 20%;
+            left: 20%;
+            background-color: #181818;
+            margin: 0;
+            z-index: 2;
+            height: 10%;
+            position: relative;
+
+            &.mobile-show {
+                display: inline; 
+                top: 10%;
+                height: 10%;
+            }
+
+            a {
+                display: inline-block;
+                justify-content: center;
+                align-items: center;
+                margin-left: 30px;
+            }
+
+            a svg {
+                opacity: 1 !important;
+            }
+        }
+
+        .hamburger-icon{
+            opacity: 1;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            display: block;
         }
     }
 }

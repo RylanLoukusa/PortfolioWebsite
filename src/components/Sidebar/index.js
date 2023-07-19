@@ -11,6 +11,7 @@ import {
   faUser,
   faEnvelope,
   faProjectDiagram,
+  faBars,
 } from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
 
@@ -25,7 +26,7 @@ const Sidebar = () => {
         onClick={() => setShowNav(false)}>
         <img src={LogoS} alt="Logo" />
       </Link>
-      <div className="subTitle"> RylanLoukusa</div>
+      <div className="subTitle">Loukusa</div>
        <nav className={showNav ? 'mobile-show' : ''}>
         <NavLink 
           exact="true"
@@ -58,7 +59,7 @@ const Sidebar = () => {
           <FontAwesomeIcon icon={faProjectDiagram} color="#4d4d4e" />
         </NavLink>
       </nav>
-      <ul>
+      <ul className="list">
         <li>
           <a
             href="https://www.linkedin.com/in/rylan-loukusa-036750225/"
@@ -95,6 +96,12 @@ const Sidebar = () => {
           </a>
         </li>
       </ul>
+      <FontAwesomeIcon
+        onClick={() => showNav === false ? setShowNav(true) : setShowNav(false) }
+        icon={faBars}
+        color="#FFA69E"
+        size="3x"
+        className='hamburger-icon' />
     </div> 
   )
 }
