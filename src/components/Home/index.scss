@@ -53,7 +53,7 @@
     h2 {
         color: #FFA69E;
         margin-top: 20px;
-        font-weight: 400;
+        font-weight: 600;
         font-size: 11px;
         font-family: sans-serif;
         letter-spacing: 3px;
@@ -80,3 +80,95 @@
         }
     }
 }
+
+@media screen and (max-width: 1200px) {
+
+    .top-tags {
+        z-index: 10;
+        top: 120px;
+        left: 7%;
+        height: 50px;
+    }
+    
+    .home-page h1:before {
+        top: 15%;
+        left: -15%;
+    }
+    .home-page .text-zone {
+      position: relative;
+      width: 60%;
+      transform: none;
+      padding: 180px 0 0 130px;
+      float: left;
+    
+
+        h1, h2 {
+            position: relative;
+            right: 30%;
+        }
+
+        h1 {
+            margin-bottom: -5%;
+        }
+
+        .last-logo{
+            margin-left: 0px;
+        }
+    }
+
+    .home-page .flat-button {
+        position: relative;
+        right: 30%;
+        display: block;
+        margin: 10px auto 30px auto;
+        width: 124px;
+    }
+
+    .bottom-tags {
+        position: relative;
+        left: 7%;
+    }
+  
+    .logo-container {
+        z-index: 1;
+        opacity: 45%;
+        transform: rotateZ(7deg);
+  
+        svg {
+            position: absolute;
+            top: -50%;
+            right: auto;
+            bottom: auto;
+            left: 15%;
+            margin: auto;
+        }
+        .solid-logo-div {
+            position: absolute;
+            width: 100%;
+            top: -25%;
+            left: 15%;
+        }
+    }
+
+    .logo-container-l{
+        z-index: 5;
+        opacity: 45%;
+        transform: rotateZ(4deg);
+  
+        svg {
+            position: absolute;
+            top: 55%;
+            right: auto;
+            bottom: auto;
+            left: 38%;
+            margin: auto;
+        }
+        .solid-logo-div-l {
+            position: absolute;
+            width: 100%;
+            top: 27%;
+            left: 38%;
+        }
+    }
+
+  }
