@@ -118,8 +118,7 @@
 @media screen and (max-width: 1200px) {
 
   .page {
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
+    height: 100dvh;
   }
 
   .top-tags {
