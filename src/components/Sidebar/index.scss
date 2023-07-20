@@ -151,7 +151,7 @@
 @media screen and (max-width: 1200px) {
     .nav-bar {
         background: #181818;
-        position: absolute;
+        position: relative;
         width: 100%;
         height: auto;
         min-height: auto;
@@ -195,7 +195,7 @@
         .hamburger-icon{
             opacity: 1;
             position: absolute;
-            top: 15px;
+            top: 22px;
             right: 15px;
             display: block;
         }

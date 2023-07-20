@@ -63,12 +63,12 @@
     .flat-button {
         color: #FFA69E;
         font-size: 13px;
-        font-weight: 400;
+        font-weight: 600;
         letter-spacing: 4px;
         font-family: sans-serif;
         text-decoration: none;
         padding: 10px 18px;
-        border: 1px solid #FFA69E;
+        border: 2px solid #FFA69E;
         margin-top: 25px;
         float: left;
         animation: fadeIn 1s 1.8s backwards;
@@ -83,20 +83,19 @@
 
 @media screen and (max-width: 1200px) {
 
-    .top-tags {
-        z-index: 10;
-        top: 120px;
-        left: 7%;
-        height: 50px;
-    }
-    
     .home-page h1:before {
         top: 15%;
         left: -15%;
+        font-weight: 500;
     }
+
+    .home-page h1:after {
+        font-weight: 500;
+    }
+
     .home-page .text-zone {
       position: relative;
-      width: 50%;
+      width: 55%;
       transform: none;
       padding: 180px 0 0 130px;
       float: left;
@@ -124,19 +123,15 @@
         width: 124px;
     }
 
-    .bottom-tags {
-        position: relative;
-        left: 7%;
-    }
   
     .logo-container {
         z-index: 1;
         opacity: 45%;
-        transform: rotateZ(7deg);
+        transform: rotateZ(10deg);
   
         svg {
             position: absolute;
-            top: -50%;
+            top: -75%;
             right: auto;
             bottom: auto;
             left: 15%;
@@ -145,7 +140,7 @@
         .solid-logo-div {
             position: absolute;
             width: 100%;
-            top: -25%;
+            top: -37.5%;
             left: 15%;
         }
     }
@@ -157,7 +152,7 @@
   
         svg {
             position: absolute;
-            top: 55%;
+            top: 35%;
             right: auto;
             bottom: auto;
             left: 38%;
@@ -166,7 +161,7 @@
         .solid-logo-div-l {
             position: absolute;
             width: 100%;
-            top: 27%;
+            top: 17%;
             left: 38%;
         }
     }
