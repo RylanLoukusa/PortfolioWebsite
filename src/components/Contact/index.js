@@ -70,25 +70,27 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
-            <div className="info-map">
-                Rylan Loukusa,
-                <br />
-                United States,
-                <br />
-                Monticello, Minnesota <br />
-            </div>
-            <div className="wrap-map">
-            <MapContainer center={[45.3055, -93.7941]} zoom={8} scrollWheelZoom={false}>
-                <TileLayer
-                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                />
-                 <Marker position={[45.3055, -93.7941]}>
-                        <Popup>
-                           I am located here!
-                        </Popup>
-                </Marker>
-            </MapContainer>
+            <div className="lower">
+                <div className="info-map">
+                    Rylan Loukusa,
+                    <br />
+                    United States,
+                    <br />
+                    Monticello, Minnesota <br />
+                </div>
+                <div className="wrap-map">
+                <MapContainer center={[45.3055, -93.7941]} zoom={8} scrollWheelZoom={false}>
+                    <TileLayer
+                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                    />
+                    <Marker position={[45.3055, -93.7941]}>
+                            <Popup>
+                            I am located here!
+                            </Popup>
+                    </Marker>
+                </MapContainer>
+                </div>
             </div>
         </div>
     )
