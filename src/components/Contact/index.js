@@ -76,10 +76,9 @@ const Contact = () => {
                 United States,
                 <br />
                 Monticello, Minnesota <br />
-                <span> rylanloukusa@gmail.com</span>
             </div>
             <div className="wrap-map">
-            <MapContainer center={[45.3055, -93.7941]} zoom={9} scrollWheelZoom={false}>
+            <MapContainer center={[45.3055, -93.7941]} zoom={8} scrollWheelZoom={false}>
                 <TileLayer
                      attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

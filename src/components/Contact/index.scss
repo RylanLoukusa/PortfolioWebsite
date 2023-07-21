@@ -79,7 +79,7 @@ textarea {
     padding: 20px;
     color: white;
     font-family: 'Helvetica';
-    font-size: 17px;
+    font-size: 12px;
     font-weight: 300;
     opacity: 0;
     animation: fadeIn 1s 1.5s;
@@ -141,12 +141,11 @@ textarea {
     }
 
     .info-map {
-        // top: 62%;
-        // right: 33%;
-        // z-index: 1;
-        // width: 200px;
-        // padding: 20px;
-        display: none;   
+        top: 54.1%;
+        right: 2%;
+        z-index: 1;
+        width: 120px;
+        padding: 10px;   
     }
 
     .wrap-map {
@@ -154,13 +153,16 @@ textarea {
       margin: 0;
       width: 100%;
       height: 400px;
+      position: relative;
+      bottom: 4%;   
     }
 
     .leaflet-container {
-        width: 100%;
+        width: 98%;
         height: 75%;
         position: relative;
-        bottom: 7%;      
+        //bottom: 7%;  
+        left: 1%;    
     }
     
   }
