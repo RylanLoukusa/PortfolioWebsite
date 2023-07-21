@@ -31,8 +31,6 @@ const About = () => {
                 </h1>
                 <p>
                 I am a passionate and driven software engineering student with experience in C++, JavaScript, and problem-solving. 
-                Through coursework, personal projects, and internships, I have gained hands-on experience in software development and algorithms.
-                 I thrive in collaborative environments and enjoy tackling complex challenges.
                 </p>
                 <p>
                 I'm queitly confident, naturally curious, and With a thirst for knowledge and a love for technology, 
@@ -40,9 +38,7 @@ const About = () => {
                 </p>
                 <p>
                 In addition to my technical skills, I possess excellent communication and interpersonal abilities. 
-                I am a team player who actively contributes to group discussions and fosters a positive environment. 
-                As a software engineering intern, I am eager to learn from experienced professionals and make a meaningful impact on your organization.
-                </p>
+               </p>
             </div>
 
             <div className='stage-cube-cont'>

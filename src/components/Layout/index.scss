@@ -116,21 +116,42 @@
 } 
   
 @media screen and (max-width: 1200px) {
+
   .page {
     height: 90%;
   }
-  .top-tags {
-    font-weight: 500;
-    z-index: 10;
-    top: 15px;
-    left: 8%;
-    height: 50px;
-}
 
-  .bottom-tags {
-    top: 90%;
-    left: 8%;
-    font-weight: 500;
-  }
+  .tags {
+      display: none;
+    }
+
+  .container {
+    position: initial;
+    height: auto;
+    min-height: auto;
+
+    &.contact-page,
+    &.about-page {
+      .text-zone {
+        position: initial;
+        transform: none;
+        width: 100%;
+        display: block;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+    }
+
+      h1.page-title {
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+
+      .image-box {
+        height: 200px;
+        max-width: calc(50% - 10px);
+      }
+    }
 }
   

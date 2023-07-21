@@ -24,6 +24,12 @@ const Home = () => {
         return ()=> clearTimeout(idTimeOut);
     },[])
     return (
+        <div>
+                <span className="tags-home top-tags-home">
+                    <span className="top-tag-html-home">&lt;html&gt;</span>
+                    <br />
+                    &lt;body&gt;
+                </span>
             <div className="containter home-page">
                 <div className="text-zone">
                     <h1>
@@ -45,6 +51,12 @@ const Home = () => {
             <Logo />
             <Logo2 />
             </div>
+            <span className="tags-home bottom-tags-home">
+                    &lt;/body&gt;
+                    <br />
+                    <span className="bottom-tag-html-home">&lt;/html&gt;</span>
+                </span>
+        </div>
     )
 }
 
