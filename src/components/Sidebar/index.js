@@ -46,6 +46,10 @@ const Sidebar = () => {
           activeclassname="active"
           className="contact-link"
           to="/contact"
+          spy={true}
+          smooth={true}
+          duration={500}
+          delay={50}
           onClick={() => setShowNav(false)}
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />

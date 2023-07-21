@@ -20,6 +20,7 @@ const Layout = () => {
                     <span className="bottom-tag-html">&lt;/html&gt;</span>
                 </span>
             </div>
+            <div className="footer"></div>
         </div>
     )
 }

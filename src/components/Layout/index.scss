@@ -116,7 +116,9 @@
 } 
   
 @media screen and (max-width: 1200px) {
-
+  .page {
+    height: 75%;
+  }
   .top-tags {
     font-weight: 500;
     z-index: 10;
@@ -126,7 +128,7 @@
 }
 
   .bottom-tags {
-    top: 83%;
+    top: 90%;
     left: 8%;
     font-weight: 500;
   }
