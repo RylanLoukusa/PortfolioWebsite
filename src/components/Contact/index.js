@@ -45,7 +45,7 @@ const Contact = () => {
                         idx={15}
                     />
                 </h1>
-                <p>
+                <p className="description">
                     I am interested in software engineering internships. 
                 </p>
                 <div className='contact-form'>
