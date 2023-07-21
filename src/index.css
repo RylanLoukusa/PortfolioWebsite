@@ -1,5 +1,6 @@
 html {
-  font-size: 62.5%
+  font-size: 62.5%;
+  height: -webkit-fill-available;
 }
 
 
@@ -12,4 +13,6 @@ body {
   display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
