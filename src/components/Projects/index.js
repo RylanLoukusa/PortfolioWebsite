@@ -26,7 +26,7 @@ const Projects = () => {
                      <a href ="https://rylanloukusa.github.io/calculator/" target="_blank"> <img src={CalcPic} alt="CalculatorPic" /></a>
                     </li>
                     <li>
-                        <a href ="https://rylanloukusa.github.io/etch-a-sketch/" target="_blank"> <img src={RpsPic} alt="RpsPic" /></a>
+                        <a href ="https://rylanloukusa.github.io/rpsgame/" target="_blank"> <img src={RpsPic} alt="RpsPic" /></a>
                     </li>
                 </ul>
                 
