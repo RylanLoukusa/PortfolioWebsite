@@ -44,6 +44,14 @@ const Sidebar = () => {
         </NavLink>
         <NavLink
           activeclassname="active"
+          className="projects-link"
+          to="/projects"
+          onClick={() => setShowNav(false)}
+        >
+          <FontAwesomeIcon icon={faProjectDiagram} color="#4d4d4e" />
+        </NavLink>
+        <NavLink
+          activeclassname="active"
           className="contact-link"
           to="/contact"
           spy={true}
@@ -53,14 +61,6 @@ const Sidebar = () => {
           onClick={() => setShowNav(false)}
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
-        </NavLink>
-        <NavLink
-          activeclassname="active"
-          className="projects-link"
-          to="/projects"
-          onClick={() => setShowNav(false)}
-        >
-          <FontAwesomeIcon icon={faProjectDiagram} color="#4d4d4e" />
         </NavLink>
       </nav>
       <ul className="list">

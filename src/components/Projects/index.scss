@@ -1,0 +1,25 @@
+.projects-page {
+    .text-zone {
+        margin-top: -70px;
+    }
+    img {
+        width: 400px;
+        height: 266px;;
+    
+        &:hover {
+            animation: forwards 10px;
+            border: 5px solid lightgreen;
+        }
+    }
+    ul{
+        margin-left: -90px;
+        display: flex;
+        flex-direction: row;
+    
+        li {
+            margin: 10px;
+        }
+    }
+    
+} 
+
