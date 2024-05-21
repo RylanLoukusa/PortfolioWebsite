@@ -1,10 +1,14 @@
+
 .projects-page {
+    h3 {
+        color: white;
+    }
     .text-zone {
         margin-top: -70px;
     }
     img {
-        width: 400px;
-        height: 266px;;
+        width: 300px;
+        height: 200px;;
     
         &:hover {
             animation: forwards 10px;
@@ -12,9 +16,10 @@
         }
     }
     ul{
-        margin-left: -90px;
+        margin-left: -70px;
         display: flex;
-        flex-direction: row;
+        flex-direction:row;
+        list-style: none;
     
         li {
             margin: 10px;
@@ -22,4 +27,39 @@
     }
     
 } 
+
+@media screen and (max-width: 1200px) {
+    h1 {
+        width: 400px;
+        padding-top: 40px;
+    }
+    h3 {
+        width: 400px;
+    }
+    .projects-page {
+        .text-zone {
+            margin-top: -70px;
+        }
+        img {
+            width: 300px;
+            height: 200px;;
+        
+            &:hover {
+                animation: forwards 10px;
+                border: 5px solid lightgreen;
+            }
+        }
+        ul{
+            margin-left: -70px;
+            display: flex;
+            flex-direction:column;
+            list-style: none;
+        
+            li {
+                margin: 10px;
+            }
+        }
+        
+    } 
+}
 

@@ -46,7 +46,10 @@ const Home = () => {
                     <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={22}/>
                     </h1>
                 <h2> Student / Intern </h2>
-                <Link to="/contact" className='flat-button'>CONTACT ME</Link>
+                <div className='button-container'>
+                    <a href="https://www.resume.lol/share/w003sib" className='flat-button' target="_blank" rel="noopener noreferrer">RESUME</a>
+                    <Link to="/contact" className='flat-button'>CONTACT ME</Link>
+                </div>
             </div>
             <Logo />
             <Logo2 />

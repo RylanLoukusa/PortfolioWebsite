@@ -1,11 +1,16 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
 .nav-bar{
     background: #181818;
     width: 75px;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 3;
-    min-height: 500px;
 
     .subTitle {
         font-size: 13px;
@@ -109,7 +114,7 @@
     
     ul {
         position: absolute;
-        bottom: 40px;
+        bottom: 10px;
         width: 100%;
         display: block;
         padding: 0;
@@ -128,18 +133,6 @@
                     color: #FFA69E;
                 }
             }
-        }
-        .credits {
-            position: absolute;
-            bottom: -45%;
-            left: 31%;
-            color: #4d4d4e;
-            font-size: 11px;
-            font-weight: 400;
-            a:visited { text-decoration: none; color: #4d4d4e; }
-            a:hover { text-decoration: none; color: #4d4d4e; }
-            a:focus { text-decoration: none; color: #4d4d4e; }
-            a:hover, a:active { text-decoration: none; color: #4d4d4e; }
         }
     }
 }

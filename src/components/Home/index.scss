@@ -59,7 +59,10 @@
         letter-spacing: 3px;
         animation: fadeIn 1s 1.8s backwards;
     }
-
+    .button-container {
+        display: flex;
+        flex-direction: column;
+    }
     .flat-button {
         color: #FFA69E;
         font-size: 13px;
@@ -73,6 +76,8 @@
         float: left;
         animation: fadeIn 1s 1.8s backwards;
         white-space: nowrap;
+        width: 120px;
+        text-align: center;
 
         &:hover {
             background-color: #FFA69E;
@@ -127,7 +132,11 @@
       position: relative;
       width: 55%;
       transform: none;
-      padding: 90px 0 0 130px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 100px;
+      padding-top: 30px;
       float: left;
     
 

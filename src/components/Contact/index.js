@@ -46,7 +46,7 @@ const Contact = () => {
                     />
                 </h1>
                 <p className="description">
-                    I am interested in software engineering internships. 
+                    I am interested in a software enginnering position after my graduation date of May 2025.
                 </p>
                 <div className='contact-form'>
                     <form ref={refForm} onSubmit={sendEmail}>

@@ -90,15 +90,6 @@ const Sidebar = () => {
             />
           </a>
         </li>
-        <li>
-          <a 
-            className="credits"
-            href="https://www.youtube.com/watch?v=bmpI252DmiI" 
-            target="_blank" 
-            rel="noreferrer">
-               Credits
-          </a>
-        </li>
       </ul>
       <FontAwesomeIcon
         onClick={() => showNav === false ? setShowNav(true) : setShowNav(false) }

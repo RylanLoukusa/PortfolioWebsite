@@ -30,15 +30,17 @@ const About = () => {
                     />
                 </h1>
                 <p>
-                I am a passionate and driven software engineering student with experience in C++, JavaScript, and problem-solving. 
+                    Software engineering student at St. Cloud State University, expected to graduate in May 2025, with experience in quality assurance, front-end development.
                 </p>
                 <p>
-                I'm queitly confident, naturally curious, and With a thirst for knowledge and a love for technology, 
-                I am constantly expanding my skill set and staying updated with industry trends.
+                    Interned at Immersion Data Solutions, where I worked on comprehensive testing and implemented front-end stories using React.
                 </p>
                 <p>
-                In addition to my technical skills, I possess excellent communication and interpersonal abilities. 
-               </p>
+                    My technical skills include C++, JavaScript, Python, and experience with various development tools and methodologies, demonstrated through projects like an event planner application and an interactive learning experience using Unity.
+                </p>
+               <button className='resume'>
+                    <a href="https://www.resume.lol/share/w003sib" target="_blank">Resume</a>
+               </button>
             </div>
 
             <div className='stage-cube-cont'>

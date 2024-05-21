@@ -12,9 +12,9 @@ const Projects = () => {
                 <h1>
                   My Projects
                 </h1>
-                <p>
-                    Click on a project to open it!
-                </p>
+                <h3>
+                    Click on a project to open it! (Most not mobile friendly)
+                </h3>
                 <ul>
                     <li>
                      <a href ="https://star-squad.itch.io/undergraduate-project" target="_blank"> <img src={GamePic} alt="GamePic" /></a>

@@ -9,7 +9,7 @@ body {
   font: 300 11px/1.4 'Helveitca Neue', 'sans-serif';
   color: #444;
   background: #00798c;
-  overflow: hidden;
+  overflow: scroll;
   display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
